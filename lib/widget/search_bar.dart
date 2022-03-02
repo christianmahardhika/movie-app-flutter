@@ -14,8 +14,12 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
       decoration: InputDecoration(
         labelText: "search",
         labelStyle: TextStyle(color: Colors.white),
-        icon: Icon(
+        prefixIcon: Icon(
           Icons.search,
+          color: Colors.white,
+        ),
+        suffixIcon: Icon(
+          Icons.mic,
           color: Colors.white,
         ),
         enabledBorder: OutlineInputBorder(
