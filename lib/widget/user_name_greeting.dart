@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class UserNameGreetingsWidget extends StatelessWidget {
-  UserNameGreetingsWidget(this.name);
+  UserNameGreetingsWidget(@required this.name);
 
   final String name;
 

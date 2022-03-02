@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movie_app/widget/common/MovieAppColor.dart';
 
 class UserAvatarWidget extends StatelessWidget {
-  UserAvatarWidget(this.image);
+  UserAvatarWidget(@required this.image);
 
   final String image;
   @override

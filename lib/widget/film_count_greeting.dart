@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 class FilmCountGreetingsWidget extends StatelessWidget {
-  FilmCountGreetingsWidget(this.name);
+  FilmCountGreetingsWidget(@required this.count);
 
-  final String name;
+  final String count;
 
   @override
   Widget build(BuildContext context) {
-    final String data = "Today there are " + name + " films";
+    final String data = "Today there are " + count + " films";
     return Text(data,
         style: TextStyle(fontSize: 12, fontWeight: FontWeight.w200));
   }
