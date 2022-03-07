@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/widget/common/MovieAppColor.dart';
-import 'package:movie_app/widget/film_count_greeting.dart';
-import 'package:movie_app/widget/movie_carousel.dart';
-import 'package:movie_app/widget/rating_widget.dart';
-import 'package:movie_app/widget/search_bar.dart';
-import 'package:movie_app/widget/trailer_button.dart';
-import 'package:movie_app/widget/user_avatar.dart';
-import 'package:movie_app/widget/user_name_greeting.dart';
+import 'package:movie_app/widget/home_widgets/film_count_greeting.dart';
+import 'package:movie_app/widget/home_widgets/movie_carousel.dart';
+import 'package:movie_app/widget/home_widgets/rating_widget.dart';
+import 'package:movie_app/widget/home_widgets/search_bar.dart';
+import 'package:movie_app/widget/home_widgets/trailer_button.dart';
+import 'package:movie_app/widget/home_widgets/user_avatar.dart';
+import 'package:movie_app/widget/home_widgets/user_name_greeting.dart';
 
 final List<String> imgList = [
   'https://images.unsplash.com/reserve/D8ijGd3CSGq4BxJ9EzTf_13976945916_fa0ce84ee3_o.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
@@ -20,6 +20,7 @@ final List<String> imgList = [
 class HomeOverviewScreen extends StatelessWidget {
   const HomeOverviewScreen({Key? key}) : super(key: key);
 
+  static const routeName = '/home-overview';
   @override
   Widget build(BuildContext context) {
     return Scaffold(

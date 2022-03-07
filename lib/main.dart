@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/screen/home_overview.dart';
+import 'package:movie_app/screen/movie_detail.dart';
 import 'package:movie_app/widget/common/MovieAppColor.dart';
 
 void main() {
@@ -26,6 +27,10 @@ class MyApp extends StatelessWidget {
         accentColor: MovieAppColor.PurpleSecondary,
       ),
       home: HomeOverviewScreen(),
+      routes: {
+        MovieDetailScreen.routeName: (ctx) => MovieDetailScreen(),
+        HomeOverviewScreen.routeName: (ctx) => HomeOverviewScreen(),
+      },
     );
   }
 }
